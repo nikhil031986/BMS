@@ -1,0 +1,9 @@
+C:\Users\nsharma\Documents\Visual Studio 2015\Projects\BMS\BAccess\bin\Debug\BAccess.dll
+C:\Users\nsharma\Documents\Visual Studio 2015\Projects\BMS\BAccess\bin\Debug\BAccess.pdb
+C:\Users\nsharma\Documents\Visual Studio 2015\Projects\BMS\BAccess\bin\Debug\DataAccess.dll
+C:\Users\nsharma\Documents\Visual Studio 2015\Projects\BMS\BAccess\bin\Debug\Entity.dll
+C:\Users\nsharma\Documents\Visual Studio 2015\Projects\BMS\BAccess\bin\Debug\DataAccess.pdb
+C:\Users\nsharma\Documents\Visual Studio 2015\Projects\BMS\BAccess\bin\Debug\Entity.pdb
+C:\Users\nsharma\Documents\Visual Studio 2015\Projects\BMS\BAccess\obj\Debug\BAccess.csprojResolveAssemblyReference.cache
+C:\Users\nsharma\Documents\Visual Studio 2015\Projects\BMS\BAccess\obj\Debug\BAccess.dll
+C:\Users\nsharma\Documents\Visual Studio 2015\Projects\BMS\BAccess\obj\Debug\BAccess.pdb
