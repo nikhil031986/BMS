@@ -1,0 +1,5 @@
+C:\Users\nsharma\Documents\Visual Studio 2015\Projects\BMS\Entity\bin\Debug\Entity.dll
+C:\Users\nsharma\Documents\Visual Studio 2015\Projects\BMS\Entity\bin\Debug\Entity.pdb
+C:\Users\nsharma\Documents\Visual Studio 2015\Projects\BMS\Entity\obj\Debug\Entity.csprojResolveAssemblyReference.cache
+C:\Users\nsharma\Documents\Visual Studio 2015\Projects\BMS\Entity\obj\Debug\Entity.dll
+C:\Users\nsharma\Documents\Visual Studio 2015\Projects\BMS\Entity\obj\Debug\Entity.pdb

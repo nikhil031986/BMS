@@ -1,0 +1,7 @@
+C:\Users\nsharma\Documents\Visual Studio 2015\Projects\BMS\DataAccess\bin\Release\DataAccess.dll
+C:\Users\nsharma\Documents\Visual Studio 2015\Projects\BMS\DataAccess\bin\Release\DataAccess.pdb
+C:\Users\nsharma\Documents\Visual Studio 2015\Projects\BMS\DataAccess\bin\Release\Entity.dll
+C:\Users\nsharma\Documents\Visual Studio 2015\Projects\BMS\DataAccess\bin\Release\Entity.pdb
+C:\Users\nsharma\Documents\Visual Studio 2015\Projects\BMS\DataAccess\obj\Release\DataAccess.csprojResolveAssemblyReference.cache
+C:\Users\nsharma\Documents\Visual Studio 2015\Projects\BMS\DataAccess\obj\Release\DataAccess.dll
+C:\Users\nsharma\Documents\Visual Studio 2015\Projects\BMS\DataAccess\obj\Release\DataAccess.pdb
