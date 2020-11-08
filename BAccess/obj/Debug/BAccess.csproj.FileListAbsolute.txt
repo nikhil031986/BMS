@@ -7,3 +7,14 @@ C:\Users\nsharma\Documents\Visual Studio 2015\Projects\BMS\BAccess\bin\Debug\Ent
 C:\Users\nsharma\Documents\Visual Studio 2015\Projects\BMS\BAccess\obj\Debug\BAccess.csprojResolveAssemblyReference.cache
 C:\Users\nsharma\Documents\Visual Studio 2015\Projects\BMS\BAccess\obj\Debug\BAccess.dll
 C:\Users\nsharma\Documents\Visual Studio 2015\Projects\BMS\BAccess\obj\Debug\BAccess.pdb
+D:\GitRepo\BMS\BAccess\bin\Debug\BAccess.dll
+D:\GitRepo\BMS\BAccess\bin\Debug\BAccess.pdb
+D:\GitRepo\BMS\BAccess\bin\Debug\DataAccess.dll
+D:\GitRepo\BMS\BAccess\bin\Debug\Entity.dll
+D:\GitRepo\BMS\BAccess\bin\Debug\DataAccess.pdb
+D:\GitRepo\BMS\BAccess\bin\Debug\Entity.pdb
+D:\GitRepo\BMS\BAccess\obj\Debug\BAccess.csprojAssemblyReference.cache
+D:\GitRepo\BMS\BAccess\obj\Debug\BAccess.csproj.CoreCompileInputs.cache
+D:\GitRepo\BMS\BAccess\obj\Debug\BAccess.csproj.CopyComplete
+D:\GitRepo\BMS\BAccess\obj\Debug\BAccess.dll
+D:\GitRepo\BMS\BAccess\obj\Debug\BAccess.pdb
