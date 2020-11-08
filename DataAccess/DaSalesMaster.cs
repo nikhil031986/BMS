@@ -17,17 +17,7 @@ namespace DataAccess
             if (dtSalesMaster != null)
             {
                 DataRow firstRow = dtSalesMaster.AsEnumerable().FirstOrDefault();
-                if (firstRow != null)
-                {
-                    retSalesMaster.SalesMstId = Convert.ToInt32(firstRow["SalesMstId"]);
-                    retSalesMaster.InvoiceNo = Convert.ToInt32(firstRow["InvoiceNo"]);
-                    retSalesMaster.SalesDate = Convert.ToDateTime(firstRow["SalesDate"]);
-                    retSalesMaster.PartyName = Convert.ToString(firstRow["PartyName"]);
-                    retSalesMaster.Desc = Convert.ToString(firstRow["Desc"]);
-                    retSalesMaster.Total_Amount = Convert.ToDecimal(firstRow["Total_Amount"]);
-                    retSalesMaster.Dis_Amount = Convert.ToDecimal(firstRow["Dis_Amount"]);
-                    retSalesMaster.Sales_Amount = Convert.ToDecimal(firstRow["Sales_Amount"]);
-                }
+                retSalesMaster=clsComModile.ToObject<Entity.SalesMaster>(firstRow);
             }
             return retSalesMaster;
         }
