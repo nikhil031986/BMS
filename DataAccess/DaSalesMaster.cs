@@ -17,7 +17,10 @@ namespace DataAccess
             if (dtSalesMaster != null)
             {
                 DataRow firstRow = dtSalesMaster.AsEnumerable().FirstOrDefault();
-                retSalesMaster=clsComModile.ToObject<Entity.SalesMaster>(firstRow);
+                if (firstRow != null)
+                {
+                    retSalesMaster = clsComModile.ToObject<Entity.SalesMaster>(firstRow);
+                }
             }
             return retSalesMaster;
         }
