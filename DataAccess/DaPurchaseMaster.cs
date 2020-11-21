@@ -19,17 +19,7 @@ namespace DataAccess
                 DataRow firstRow = dtPurchaseMaster.AsEnumerable().FirstOrDefault();
                 if (firstRow != null)
                 {
-                    retpurchaseMaster.PurMstId = Convert.ToInt32(firstRow["PurMstId"]);
-                    retpurchaseMaster.InvoidNo = Convert.ToString(firstRow["InvoidNo"]);
-                    retpurchaseMaster.InvoiceDate = Convert.ToDateTime(firstRow["InvoiceDate"]);
-                    retpurchaseMaster.Partyid = Convert.ToInt32(firstRow["Partyid"]);
-                    retpurchaseMaster.Desc = string.Empty;
-                    retpurchaseMaster.TotalAmount = Convert.ToDecimal(firstRow["TotalAmount"]);
-                    retpurchaseMaster.Dis_Amount = Convert.ToDecimal(firstRow["Dis_Amount"]);
-                    retpurchaseMaster.Pur_Amount = Convert.ToDecimal(firstRow["Pur_Amount"]);
-                    retpurchaseMaster.FullPayment = Convert.ToBoolean(firstRow["FullPayment"]);
-                    retpurchaseMaster.Pay_Amount = Convert.ToDecimal(firstRow["Pay_Amount"]);
-                    retpurchaseMaster.Pen_Amoun = Convert.ToDecimal(firstRow["Pen_Amoun"]);
+                    retpurchaseMaster = clsComModile.ToObject<Entity.PurchaseMaster>(firstRow);
                 }
             }
             return retpurchaseMaster;
