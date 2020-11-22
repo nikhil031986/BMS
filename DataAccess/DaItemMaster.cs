@@ -19,26 +19,7 @@ namespace DataAccess
             Entity.ItemMaster itemMaster = new Entity.ItemMaster();
             DataTable dtForItemMaster = DaItemMaster.getRecordTable("SELECT ItemMst.*, StockMst.CurrStock FROM ItemMst INNER JOIN StockMst ON ItemMst.ItemId = StockMst.ItemId WHERE ItemMst.[ItemId]=" + itemMasterId.ToString());
             DataRow firstRow = dtForItemMaster.AsEnumerable().FirstOrDefault();
-            itemMaster.ItemId = Convert.ToInt32(firstRow["ItemId"]);
-            itemMaster.ItemTypeId = Convert.ToInt32(firstRow["ItemTypeId"]);
-            itemMaster.Title = Convert.ToString(firstRow["Title"]);
-            itemMaster.Description = Convert.ToString(firstRow["Description"]);
-            itemMaster.Rate = Convert.ToInt32(firstRow["Rate"]);
-            itemMaster.PubYear = Convert.ToString(firstRow["PubYear"]);
-            itemMaster.PubPlace = Convert.ToString(firstRow["PubPlace"]);
-            itemMaster.Publisher = Convert.ToString(firstRow["Publisher"]);
-            itemMaster.Volume = Convert.ToString(firstRow["volume"]);
-            itemMaster.Edition = Convert.ToString(firstRow["Edition"]);
-            itemMaster.Language = Convert.ToString(firstRow["Language"]);
-            itemMaster.ISBN = Convert.ToString(firstRow["ISBN"]);
-            itemMaster.Author = Convert.ToString(firstRow["Author"]);
-            itemMaster.PurRate = Convert.ToInt32(firstRow["purRate"]);
-            itemMaster.SalesRate = Convert.ToInt32(firstRow["salesRate"]);
-            itemMaster.OpnignQty = Convert.ToInt32(firstRow["OpningQty"]);
-            itemMaster.Rate_Dic_per = Convert.ToInt32(firstRow["Rate_Dic_per"]);
-            itemMaster.Rate_Dic_Amount = Convert.ToInt32(firstRow["Rate_Dic_Amount"]);
-            itemMaster.CurrentStock = Convert.ToInt32(firstRow["CurrStock"]);
-            itemMaster.Closingqty = Convert.ToInt32(firstRow["Closingqty"]);
+            itemMaster=clsComModile.ToObject<Entity.ItemMaster>(firstRow);
             return itemMaster;
         }
         public static bool itemMasterInsertUpdate(Entity.ItemMaster itemMasterDetails, Entity.UserInfo currentUser)

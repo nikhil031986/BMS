@@ -146,25 +146,10 @@ namespace DataAccess
                     OleDbDataAdapter adp = new OleDbDataAdapter(cmd);
                     DataTable returnDataTable = new DataTable();
                     adp.Fill(returnDataTable);
+                   
                     if (returnDataTable.Rows.Count > 0)
                     {
-                        DataRow drUserInfo = returnDataTable.Rows[0];
-                        returnUserLogin.UserId = Convert.ToInt32(drUserInfo["UserId"]);
-                        returnUserLogin.User_Name = Convert.ToString(drUserInfo["User_Name"]);
-                        returnUserLogin.Password = Convert.ToString(drUserInfo["Password"]);
-                        returnUserLogin.Address = Convert.ToString(drUserInfo["Address"]);
-                        returnUserLogin.Sex = Convert.ToString(drUserInfo["Sex"]);
-                        returnUserLogin.EmailId = Convert.ToString(drUserInfo["EmailId"]);
-                        returnUserLogin.PhoneNo = Convert.ToString(drUserInfo["PhoneNo"]);
-                        returnUserLogin.IsAdmin = Convert.ToBoolean(drUserInfo["IsAdmin"]);
-                        returnUserLogin.IsEdit = Convert.ToBoolean(drUserInfo["IsEdit"]);
-                        returnUserLogin.IsDelete = Convert.ToBoolean(drUserInfo["IsDelete"]);
-                        returnUserLogin.IsDeactive = Convert.ToBoolean(drUserInfo["IsDeactive"]);
-                        returnUserLogin.EntUserId = Convert.ToInt32(drUserInfo["EntUserId"]);
-                        returnUserLogin.EntDateTime = Convert.ToDateTime(drUserInfo["EntDateTime"]);
-                        returnUserLogin.UpUserId = Convert.ToInt32(drUserInfo["UpUserId"]);
-                        returnUserLogin.UpDateTime = Convert.ToDateTime(drUserInfo["UpDateTime"]);
-
+                        returnUserLogin = clsComModile.ToObject<Entity.UserInfo>(returnDataTable.Rows[0]);
                     }
                 }
                 //returnUserLogin.CurrentYearId = getScalerValue("SELECT YearMaster.Year_Id FROM YearMaster WHERE (((YearMaster.Start_Date)<=#"+DateTime.Now.Date.ToString("MM/dd/yyyy")+"#) AND ((YearMaster.End_Date)>=#"+DateTime.Now.Date.ToString("MM/dd/yyyy")+"#))");

@@ -10,23 +10,16 @@ namespace DataAccess
 {
     public static class DaBookIssue
     {
-        public static Entity.BookIssue getbookIssueMaster(string issueNo,int bookMasterId=0)
+        public static Entity.BookIssue getbookIssueMaster(string issueNo, int bookMasterId = 0)
         {
             Entity.BookIssue retBookMaster = new Entity.BookIssue();
-            DataTable dtPurchaseMaster = DataAccess.DaItemMaster.getRecordTable("SELECT TOP 1 * FROM BookIssue WHERE "+ (bookMasterId>0? "BookIssue.BookIssueId="+bookMasterId.ToString() : "BookIssue.IssueNo=" + issueNo));
+            DataTable dtPurchaseMaster = DataAccess.DaItemMaster.getRecordTable("SELECT TOP 1 * FROM BookIssue WHERE " + (bookMasterId > 0 ? "BookIssue.BookIssueId=" + bookMasterId.ToString() : "BookIssue.IssueNo=" + issueNo));
             if (dtPurchaseMaster != null)
             {
                 DataRow firstRow = dtPurchaseMaster.AsEnumerable().FirstOrDefault();
                 if (firstRow != null)
                 {
-                    retBookMaster.BookIssueId = Convert.ToInt32(firstRow["BookIssueId"]);
-                    retBookMaster.IssueNo = Convert.ToInt32(firstRow["IssueNo"]);
-                    retBookMaster.IssueDate = Convert.ToDateTime(firstRow["IssueDate"]);
-                    retBookMaster.ReturnDate = Convert.ToDateTime(firstRow["ReturnDate"]);
-                    retBookMaster.PartyName = Convert.ToString(firstRow["PartyName"]);
-                    retBookMaster.MobileNo = Convert.ToString(firstRow["MobileNo"]);
-                    retBookMaster.Emailid = Convert.ToString(firstRow["Emailid"]);
-                    retBookMaster.IsReturn = Convert.ToBoolean(firstRow["IsReturn"]);
+                    retBookMaster = clsComModile.ToObject<Entity.BookIssue>(firstRow);
                 }
             }
             return retBookMaster;
@@ -95,7 +88,7 @@ namespace DataAccess
                     else
                     {
                         cmd.ExecuteNonQuery();
-                        bool stockInsert = insertUpdateBookIssueDetails(dtBookDetils, bookIssue.BookIssueId, currentUser,bookIssue.IsReturn);
+                        bool stockInsert = insertUpdateBookIssueDetails(dtBookDetils, bookIssue.BookIssueId, currentUser, bookIssue.IsReturn);
                         if (!stockInsert)
                         {
                             transaction.Rollback();

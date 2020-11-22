@@ -3,3 +3,9 @@ C:\Users\nsharma\Documents\Visual Studio 2015\Projects\BMS\Entity\bin\Debug\Enti
 C:\Users\nsharma\Documents\Visual Studio 2015\Projects\BMS\Entity\obj\Debug\Entity.csprojResolveAssemblyReference.cache
 C:\Users\nsharma\Documents\Visual Studio 2015\Projects\BMS\Entity\obj\Debug\Entity.dll
 C:\Users\nsharma\Documents\Visual Studio 2015\Projects\BMS\Entity\obj\Debug\Entity.pdb
+D:\GitRepo\BMS\Entity\bin\Debug\Entity.dll
+D:\GitRepo\BMS\Entity\bin\Debug\Entity.pdb
+D:\GitRepo\BMS\Entity\obj\Debug\Entity.csprojAssemblyReference.cache
+D:\GitRepo\BMS\Entity\obj\Debug\Entity.csproj.CoreCompileInputs.cache
+D:\GitRepo\BMS\Entity\obj\Debug\Entity.dll
+D:\GitRepo\BMS\Entity\obj\Debug\Entity.pdb

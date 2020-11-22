@@ -5,3 +5,12 @@ C:\Users\nsharma\Documents\Visual Studio 2015\Projects\BMS\DataAccess\bin\Debug\
 C:\Users\nsharma\Documents\Visual Studio 2015\Projects\BMS\DataAccess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
 C:\Users\nsharma\Documents\Visual Studio 2015\Projects\BMS\DataAccess\obj\Debug\DataAccess.dll
 C:\Users\nsharma\Documents\Visual Studio 2015\Projects\BMS\DataAccess\obj\Debug\DataAccess.pdb
+D:\GitRepo\BMS\DataAccess\bin\Debug\DataAccess.dll
+D:\GitRepo\BMS\DataAccess\bin\Debug\DataAccess.pdb
+D:\GitRepo\BMS\DataAccess\bin\Debug\Entity.dll
+D:\GitRepo\BMS\DataAccess\bin\Debug\Entity.pdb
+D:\GitRepo\BMS\DataAccess\obj\Debug\DataAccess.csprojAssemblyReference.cache
+D:\GitRepo\BMS\DataAccess\obj\Debug\DataAccess.csproj.CoreCompileInputs.cache
+D:\GitRepo\BMS\DataAccess\obj\Debug\DataAccess.csproj.CopyComplete
+D:\GitRepo\BMS\DataAccess\obj\Debug\DataAccess.dll
+D:\GitRepo\BMS\DataAccess\obj\Debug\DataAccess.pdb

@@ -19,9 +19,7 @@ namespace DataAccess
             Entity.ItemTypeMsater itemType = new Entity.ItemTypeMsater();
             DataTable dtForItemMaster = DaItemMaster.getRecordTable("SELECT * FROM ItemTypeMst WHERE ItemTypeMst.[ItemTypeMstId]=" + itemTypeId.ToString());
             DataRow firstRow = dtForItemMaster.AsEnumerable().FirstOrDefault();
-            itemType.ItemTypeMstId = Convert.ToInt32(firstRow["ItemTypeMstId"]);
-            itemType.ItemType= Convert.ToString(firstRow["ItemType"]);
-            itemType.Desc = Convert.ToString(firstRow["Desc"]);            
+            itemType=clsComModile.ToObject<Entity.ItemTypeMsater>(firstRow);
             return itemType;
         }
         public static bool itemTypeInsertUpdate(Entity.ItemTypeMsater ItemTypeMasterDetails, Entity.UserInfo currentUser)
