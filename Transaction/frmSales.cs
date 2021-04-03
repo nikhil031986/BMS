@@ -59,7 +59,9 @@ namespace Transaction
             try
             {
                 dtSalesDetails = new DataTable();
-                DataColumn dcAutoNo = new DataColumn();
+                dgvSalesDetails.DataSource = null;
+                clsCommonFunc.AddColumnIntoDataTable(ref dtSalesDetails, ref dgvSalesDetails, "Purchase");
+               /* DataColumn dcAutoNo = new DataColumn();
                 dcAutoNo.AutoIncrement = true;
                 dcAutoNo.AutoIncrementSeed = 1;
                 dcAutoNo.AutoIncrementStep = 1;
@@ -133,7 +135,7 @@ namespace Transaction
                 dcStock.DefaultValue = 0;
                 dcStock.ColumnName = "Stock";
                 dtSalesDetails.Columns.AddRange(new DataColumn[] { dcAutoNo, dcPurcahse_Details_Id, dcPurchase_Master_Id, dcProduct_Master_Id, dcProduct_Type_Id, dcProduct_Type, dcProduct_Name, dcRate, dcQuantity, dcDiscPer, dcDisc, dcTotal_Rate, dcPQuantity, dcStock });
-                dgvSalesDetails.DataSource = dtSalesDetails;
+                dgvSalesDetails.DataSource = dtSalesDetails;*/
                 foreach (DataGridViewColumn dgColumns in dgvSalesDetails.Columns)
                 {
                     if (dgColumns.HeaderText.ToUpper().Contains("ID"))

@@ -56,6 +56,7 @@
     <Compile Include="BookIssuefrm.Designer.cs">
       <DependentUpon>BookIssuefrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="clsCommonFunc.cs" />
     <Compile Include="frmBookissue.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -88,78 +88,11 @@ namespace Transaction
         {
             try
             {
+                
                 dtPurchaseDetails = new DataTable();
-                DataColumn dcAutoNo = new DataColumn();
-                dcAutoNo.AutoIncrement = true;
-                dcAutoNo.AutoIncrementSeed = 1;
-                dcAutoNo.AutoIncrementStep = 1;
-                dcAutoNo.AllowDBNull = true;
-                dcAutoNo.DataType = typeof(int);
-                dcAutoNo.ColumnName = "AutoNo";
-                DataColumn dcPurcahse_Details_Id = new DataColumn();
-                dcPurcahse_Details_Id.AllowDBNull = true;
-                dcPurcahse_Details_Id.DataType = typeof(int);
-                dcPurcahse_Details_Id.DefaultValue = 0;
-                dcPurcahse_Details_Id.ColumnName = "Purcahse_Details_Id";
-                DataColumn dcPurchase_Master_Id = new DataColumn();
-                dcPurchase_Master_Id.AllowDBNull = true;
-                dcPurchase_Master_Id.DataType = typeof(int);
-                dcPurchase_Master_Id.DefaultValue = 0;
-                dcPurchase_Master_Id.ColumnName = "Purchase_Master_Id";
-                DataColumn dcProduct_Master_Id = new DataColumn();
-                dcProduct_Master_Id.AllowDBNull = true;
-                dcProduct_Master_Id.DataType = typeof(int);
-                dcProduct_Master_Id.DefaultValue = 0;
-                dcProduct_Master_Id.ColumnName = "ItemId";
-                DataColumn dcProduct_Type_Id = new DataColumn();
-                dcProduct_Type_Id.AllowDBNull = true;
-                dcProduct_Type_Id.DataType = typeof(int);
-                dcProduct_Type_Id.DefaultValue = 0;
-                dcProduct_Type_Id.ColumnName = "ItemTypeId";
-                DataColumn dcRate = new DataColumn();
-                dcRate.AllowDBNull = true;
-                dcRate.DataType = typeof(decimal);
-                dcRate.DefaultValue = decimal.Zero;
-                dcRate.ColumnName = "Rate";
-                DataColumn dcQuantity = new DataColumn();
-                dcQuantity.AllowDBNull = true;
-                dcQuantity.DataType = typeof(int);
-                dcQuantity.DefaultValue = 0;
-                dcQuantity.ColumnName = "Quantity";
-
-                DataColumn dcDisc = new DataColumn();
-                dcDisc.AllowDBNull = true;
-                dcDisc.DataType = typeof(int);
-                dcDisc.DefaultValue = 0;
-                dcDisc.ColumnName = "Disc";
-                DataColumn dcDiscPer = new DataColumn();
-                dcDiscPer.AllowDBNull = true;
-                dcDiscPer.DataType = typeof(int);
-                dcDiscPer.DefaultValue = 0;
-                dcDiscPer.ColumnName = "DiscPer";
-                DataColumn dcTotal_Rate = new DataColumn();
-                dcTotal_Rate.AllowDBNull = true;
-                dcTotal_Rate.DataType = typeof(decimal);
-                dcTotal_Rate.DefaultValue = decimal.Zero;
-                dcTotal_Rate.ColumnName = "Total_Rate";
-                dcTotal_Rate.Expression = "(Rate*Quantity)-Disc";
-
-                DataColumn dcProduct_Type = new DataColumn();
-                dcProduct_Type.AllowDBNull = true;
-                dcProduct_Type.DataType = typeof(string);
-                dcProduct_Type.DefaultValue = string.Empty;
-                dcProduct_Type.ColumnName = "ItemType";
-                DataColumn dcProduct_Name = new DataColumn();
-                dcProduct_Name.AllowDBNull = true;
-                dcProduct_Name.DataType = typeof(string);
-                dcProduct_Name.DefaultValue = string.Empty;
-                dcProduct_Name.ColumnName = "Product_Name";
-                DataColumn dcPQuantity = new DataColumn();
-                dcPQuantity.AllowDBNull = true;
-                dcPQuantity.DataType = typeof(int);
-                dcPQuantity.DefaultValue = 0;
-                dcPQuantity.ColumnName = "PQuantity";
-                dtPurchaseDetails.Columns.AddRange(new DataColumn[] { dcAutoNo, dcPurcahse_Details_Id, dcPurchase_Master_Id, dcProduct_Master_Id, dcProduct_Type_Id, dcProduct_Type, dcProduct_Name, dcRate, dcQuantity, dcDiscPer, dcDisc, dcTotal_Rate, dcPQuantity });
+                dgvProductDetails.DataSource = null;
+                clsCommonFunc.AddColumnIntoDataTable(ref dtPurchaseDetails, ref dgvProductDetails, "Purchase");
+                //BAccess.UserBaccess.AddColumnIntoDataTable(ref dtPurchaseDetails, "Purchase");
                 dgvProductDetails.DataSource = dtPurchaseDetails;
                 foreach (DataGridViewColumn dgColumns in dgvProductDetails.Columns)
                 {

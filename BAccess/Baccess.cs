@@ -9,6 +9,7 @@ namespace BAccess
 {
     public static class UserBaccess
     {
+        
         public static Entity.UserInfo login(string userName, string passsword)
         {
             return DataAccess.UserDataAccess.login(userName, passsword);
